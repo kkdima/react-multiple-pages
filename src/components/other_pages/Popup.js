@@ -78,6 +78,10 @@ export default class Popup extends React.Component {
 }
 
 const Wrapper = styled.div`
+textarea {
+  resize: none;
+  font-size: 21px
+}
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -113,7 +117,7 @@ const Input = styled.input`
     -webkit-appearance: none;
     border-style: solid;
     border:none;
-    
+    font-size: 21px
   }
   @media ${device.tablet} {
   }

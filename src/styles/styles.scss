@@ -1,0 +1,209 @@
+@import './base/settings';
+@import './base/base';
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400,700');
+// @import { device } from '../theme/GlobalStyle';
+
+
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+$green: rgb(72, 189, 76);
+$brown: #584E4A;
+$whitey: #f0f0f0;
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Chivo', sans-serif;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  background: #FFFFFF;
+  box-shadow: 0 3px 19px 2px rgba(212,212,212,0.72);
+  border-radius: 10px;
+  width: 405px;
+  height: 54px;
+  font-size: 21px;
+  outline: none
+}
+
+// Modal styles
+
+
+
+// Modal styles
+
+.main-nav {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: #000000;
+
+    cursor: pointer;
+    outline: none;
+
+    position: relative;
+    text-decoration: none;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $green;
+    }
+
+    &:before {
+      opacity: 0;
+      transform: translateY(- $distance);
+      transition: transform 0s $easeOutBack, opacity 0s;
+    }
+
+    &:after {
+      opacity: 0;
+      transform: translateY($distance/2);
+      transition: transform $duration $easeOutBack, opacity $duration;
+    }
+
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &:before {
+        transition: transform $duration $easeOutBack, opacity $duration;
+      }
+
+      &:after {
+        transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+      }
+    }
+
+}
+
+.main-nav-active {
+    color: $green !important;
+    &:active,
+    &:focus {
+
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      &:before {
+        transition: transform $duration $easeOutBack, opacity $duration;
+      }
+
+      &:after {
+        transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+      }
+    }
+}
+
+// Carousel_Slick
+// Add spacing between images
+.slick-slide {
+  margin: 0 40px;
+}
+
+// Fix external margins
+.slick-list {
+  margin: 0 -40px;
+}
+.slick-slider {
+  overflow: hidden;
+}
+
+// button,
+//   a {
+//     cursor: pointer;
+//     outline: none;
+//   }
+
+// @media #{$mobile} {
+
+//   nav a:active {
+//     color: #66BB6A;
+
+//   }
+
+//   a {
+//     position: relative;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     padding-bottom: 8px;
+
+//     &:before,
+//     &:after {
+//       content: '';
+//       position: absolute;
+//       bottom: 2px;
+//       left: 0;
+//       right: 0;
+//       height: 2px;
+//       background-color: $green;
+//     }
+
+//     &:before {
+//       opacity: 0;
+//       transform: translateY(- $distance);
+//       transition: transform 0s $easeOutBack, opacity 0s;
+//     }
+
+//     &:after {
+//       opacity: 0;
+//       transform: translateY($distance/2);
+//       transition: transform $duration $easeOutBack, opacity $duration;
+//     }
+
+//     &:hover,
+//     &:focus {
+
+//       &:before,
+//       &:after {
+//         opacity: 1;
+//         transform: translateY(0);
+//       }
+
+//       &:before {
+//         transition: transform $duration $easeOutBack, opacity $duration;
+//       }
+
+//       &:after {
+//         transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+//       }
+//     }
+//   }
+
+  #illustrationLeaves {
+    position: absolute;
+    width: 20%;
+    max-width: 160px;
+    margin-top: 170px;
+    z-index: -1;
+}

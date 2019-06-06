@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Sign-Up-2-BTN" transform="translate(-23.000000, -16.000000)" stroke="#66BB6A" stroke-width="2">
+            <g id="Group">
+                <g transform="translate(24.000000, 15.000000)">
+                    <path d="M16,18 C16,14.8030769 13.7953333,12.0886154 10.716,11.0615385 C12.1886667,10.1852308 13.1666667,8.66092308 13.1666667,6.92307692 C13.1666667,4.20430769 10.7786667,2 7.83333333,2 C4.888,2 2.5,4.20430769 2.5,6.92307692 C2.5,8.70892308 3.534,10.2689231 5.076,11.1310769 C2.106,12.2098462 0,14.8750769 0,18" id="Stroke-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

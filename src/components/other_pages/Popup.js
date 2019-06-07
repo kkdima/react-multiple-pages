@@ -93,6 +93,8 @@ const Wrapper = styled.div`
 const Textarea = styled.textarea`
   @media ${device.mobile} {
     font-size: 21px;
+    -webkit-appearance: none;
+    resize: none;
   }
   @media ${device.tablet} {
   }

@@ -6,6 +6,7 @@ import FirstSection from './FirstSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
 import CarouselNew from './CarouselNew';
+import TestCarousel from './TestCarousel';
 import reset from '../../constants/css/reset';
 
 const GlobalStyle = createGlobalStyle`${reset}`;
@@ -37,6 +38,7 @@ class Layout extends Component {
         return (
             <BrowserRouter>
                 <Fragment>
+                    <TestCarousel />
                     <FirstSection />
                     <SecondSection />
                     <ThirdSection />

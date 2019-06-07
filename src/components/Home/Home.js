@@ -2,6 +2,10 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter} from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
+import 'normalize.css/normalize.css';
+import '../../styles/styles.scss'
+
+
 import FirstSection from './FirstSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';

@@ -71,7 +71,7 @@ export default class SimpleSlider extends React.Component {
             <FourthSectionContainer>
                 <Title>
                     <Img src={CombinedShape}/>
-                    <H2>What investors like you are saying about Zou</H2>
+                    <H2>What investors like you are saying about Zou!</H2>
                 </Title>
                 {/* What is going on here with ref={...}???? */}
                 <Slider ref={c => (this.slider = c)} {...settings} >

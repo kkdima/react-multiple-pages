@@ -12,6 +12,8 @@ export default class TestCarousel extends React.Component {
     }
 
     render() {
-        <div style="width:400px; height:400px; background:grey;">PRIVET</div>
+        return(
+            <div>PRIVET</div>
+        )
     }
 }

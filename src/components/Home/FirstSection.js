@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-// import Modal from 'react-awesome-modal';
 import { device } from '../../theme/GlobalStyle';
 import '../../styles/styles.scss';
-import leaves from '../../images/images';
-// import closebutton from '../../images/close-button.svg';
+import leaves from '../../images/Leaves.png';
 import Popup from "../other_pages/Popup";
 
-// import '../../images/images';
 
-// export default () => (
 export default class FirstSection extends Component {
     constructor(props) {
         super(props);
@@ -41,7 +37,6 @@ export default class FirstSection extends Component {
         );
     }
 };
-// );
 
 const FirstScreenContainer = styled.div`
   @media ${device.mobile} {

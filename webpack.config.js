@@ -1,5 +1,5 @@
 const path = require('path');
-const resolve = require('path').resolve;
+// const resolve = require('path').resolve;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env) => {
@@ -12,7 +12,7 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, 'public'),
       filename: 'bundle.js',
-      publicPath: '/public/'
+      publicPath: '/public'
     },
     module: {
       rules: [
@@ -59,7 +59,8 @@ module.exports = (env) => {
     devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
     devServer: {
       contentBase: path.join(__dirname, 'public'),
-      historyApiFallback: true
+      historyApiFallback: true,
+      hot: true
     }
   }
 }

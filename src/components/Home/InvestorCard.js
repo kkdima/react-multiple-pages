@@ -94,8 +94,8 @@ export const P = styled.p`
 export const InvestorBox = styled.div`
   @media ${device.mobile} {
     margin: 0;
-    width: 408px;
-    height: 296px;
+    width: 350px;
+    height: 208px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: -1px 13px 20px 0px #F0F2F4;

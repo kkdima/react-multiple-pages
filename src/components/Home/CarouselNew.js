@@ -31,7 +31,7 @@ export default class SimpleSlider extends React.Component {
         this.slider.slickPrev();
     }
 
-    render() {
+    render() { 
         const settings = {
             dots: false,
             arrows: false,
@@ -66,14 +66,14 @@ export default class SimpleSlider extends React.Component {
             ]
         };
         const children = this.props.users;
-        const { sliding, direction, position } = this.state;
+        // const { sliding, direction, position } = this.state;
         return (
             <FourthSectionContainer>
                 <Title>
                     <Img src={CombinedShape}/>
                     <H2>What investors like you are saying about Zou!</H2>
                 </Title>
-                {/* What is going on here with ref={...}???? */}
+
                 <Slider ref={c => (this.slider = c)} {...settings} >
                     {
                         children.map((user, index) =>

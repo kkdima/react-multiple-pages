@@ -42,7 +42,7 @@ class Layout extends Component {
         return (
             <BrowserRouter>
                 <Fragment>
-                    <TestCarousel />
+                    {/* <TestCarousel /> */}
                     <FirstSection />
                     <SecondSection />
                     <ThirdSection />

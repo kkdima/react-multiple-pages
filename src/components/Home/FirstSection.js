@@ -28,7 +28,7 @@ export default class FirstSection extends Component {
                 <Img src={leaves} id="illustrationLeaves"/>
                 {/* <Img src={leaves}/> */}
                 <InfoBlock>
-                    <H1>A New Way to Invest in Agriculture</H1>
+                    <H1>A New Way to Invest in Agriculture!!</H1>
                     <P>Zou provides farmes, ranchers, private foresters, and agricultural producers with online self service applications and educational materials.</P>
                     <Button href="#!" data-micron="bounce" type="button" value="Open" onClick={this.openModal}>Invest Now</Button>
                     <Popup visible={this.state.visible} handleClose={this.closeModal}/>

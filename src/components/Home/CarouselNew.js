@@ -37,33 +37,40 @@ export default class SimpleSlider extends React.Component {
             arrows: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '100px',
+            // slidesToShow: 3,
+            // slidesToScroll: 1,
+            // centerPadding: '100px',
             adaptiveHeight: true,
             responsive: [
                 {
-                    breakpoint: 800,
+                  breakpoint: 375,
+                  settings: {
+                    // centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                    breakpoint: 768,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
 
                     }
                 },
                 {
-                    breakpoint: 1600,
-                    settings: {
-                        slidesToShow: 3,
-
-                    }
+                  breakpoint: 1600,
+                  settings: {
+                    slidesToShow: 3,
+                    
+                  }
                 },
-                {
-                    breakpoint: 1920,
-                    settings: {
+                    {
+                      breakpoint: 1920,
+                      settings: {
                         slidesToShow: 4,
-                    }
-                },
-            ]
+                      }
+                    },
+              ]
         };
         const children = this.props.users;
         // const { sliding, direction, position } = this.state;

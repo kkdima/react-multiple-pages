@@ -84,7 +84,6 @@ const reset = css`
         padding: 0;
         margin: 0;
         min-width: 0;
-        font-size: 1rem;
         font-family: inherit;
     }
 

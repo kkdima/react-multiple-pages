@@ -81,7 +81,7 @@ export default class Footer extends Component {
 
 const ContainerBanner = styled.div`
   @media ${device.mobile} {
-    width: 100%;
+    max-width: 960px;
     /* height: 296px; */
     /* max-height: 296px; */
     background: #FFFFFF;
@@ -144,10 +144,13 @@ const ButtonBanner = styled.button`
     color: #FFFFFF;
     text-align: center;
     line-height: 32px;
-    width: 269px;
+    width: 250px;
+    padding: 0 20px;
     height: 48px;
     border-radius: 5px;
     border-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
     /* margin-top: 54px; */
   }
   @media ${device.tablet} {

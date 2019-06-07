@@ -53,7 +53,7 @@ export const WithAva = styled.div`
   @media ${device.mobile} {
     display: flex;
     align-items: flex-start;
-    margin: 47px 0px 0px 48px;
+    margin: 40px 0px 0px 27px;
     Img {
       background: #FFFFFF;
       border-radius: 50%;
@@ -95,7 +95,7 @@ export const InvestorBox = styled.div`
   @media ${device.mobile} {
     margin: 0;
     width: 350px;
-    height: 208px;
+    height: 240px;
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: -1px 13px 20px 0px #F0F2F4;
@@ -116,7 +116,7 @@ export const InvestorBox = styled.div`
     }
     P {
       width: 312px;
-      margin-left: 48px;
+      margin-left: 30px;
     }
   }
   @media ${device.tablet} {

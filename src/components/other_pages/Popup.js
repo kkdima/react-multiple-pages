@@ -63,7 +63,7 @@ export default class Popup extends React.Component {
                             placeholder="Email..."
                             onChange={e => this.setState({ })}
                         />
-                        <textarea
+                        <Textarea
                             name="name"
                             type="text"
                             placeholder="Your question to us..."
@@ -78,15 +78,21 @@ export default class Popup extends React.Component {
 }
 
 const Wrapper = styled.div`
-textarea {
-  resize: none;
-  font-size: 21px
-}
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  }
+`;
+
+const Textarea = styled.textarea`
+  @media ${device.mobile} {
+    font-size: 21px;
   }
   @media ${device.tablet} {
   }
@@ -117,7 +123,7 @@ const Input = styled.input`
     -webkit-appearance: none;
     border-style: solid;
     border:none;
-    font-size: 21px
+    
   }
   @media ${device.tablet} {
   }

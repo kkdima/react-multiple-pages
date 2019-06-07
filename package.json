@@ -8,7 +8,7 @@
     "serve": "live-server public",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server --watch",
+    "dev-server": "webpack-dev-server --watch --progress --hot",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -29,7 +29,7 @@
     "react": "16.8.6",
     "react-awesome-modal": "^2.0.5",
     "react-dom": "16.8.6",
-    "react-modal": "3.8.1",
+    "react-modal": "^3.8.1",
     "react-router-dom": "5.0.0",
     "react-slick": "^0.24.0",
     "sass-loader": "7.1.0",
@@ -37,12 +37,12 @@
     "styled-components": "^4.2.1",
     "url-loader": "^1.1.2",
     "validator": "11.0.0",
-    "webpack": "4.32.2"
+    "webpack": "4.32.2",
+    "webpack-dev-server": "^3.4.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1",
-    "webpack-cli": "^3.3.2",
     "live-server": "^1.2.1",
-    "webpack-dev-server": "^3.4.1"
+    "nodemon": "^1.19.1",
+    "webpack-cli": "^3.3.2"
   }
 }

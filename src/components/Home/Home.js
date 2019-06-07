@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter} from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
-import 'normalize.css/normalize.css';
+// import 'normalize.css/normalize.css';
 import '../../styles/styles.scss'
 
 
@@ -19,13 +19,14 @@ class Layout extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            users : []
+            users : [],
         };
     };
     
     // eslint-disable-next-line react/sort-comp
     loadUsers = () => {
-        fetch("https://jsonplaceholder.typicode.com/users")
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        fetch(proxyurl +"https://jsonplaceholder.typicode.com/users")
             .then(res => res.json())
             .then(json => {
                 this.setState({

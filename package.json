@@ -35,7 +35,7 @@
     "style-loader": "0.23.1",
     "styled-components": "^4.2.1",
     "url-loader": "^1.1.2",
-    "validator": "11.0.0",
+    "validator": "13.7.0",
     "webpack": "4.32.2",
     "webpack-dev-server": "^3.4.1"
   },
